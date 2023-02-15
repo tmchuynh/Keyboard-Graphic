@@ -5,7 +5,7 @@
 body {
   margin: 0;
   overflow: hidden;
-  background-color: #0a0a0a;
+  background-color: #aca0a0;
   height: 100vh;
   display: flex;
   align-items: center;
@@ -38,7 +38,7 @@ body {
 
 .key {
   --width: var(--key-width);
-  --color: hsl(0, 0%, 85%);
+  --color: rgb(217, 217, 217);
   --size: 1;
   --size-2: 1.654545;
   --size-3: 1.981818;
@@ -91,33 +91,33 @@ body {
   .key.size-7 {
     --size: var(--size-7); }
   .key.grey {
-    --color: hsl(0, 0%, 50%); }
+    --color: rgb(170, 170, 170); }
   .key.red {
-    --color: hsl(0, 80%, 60%); }
+    --color: rgb(224, 11, 11); }
   .key.orange {
-    --color: hsl(25, 80%, 60%); }
+    --color: rgb(228, 103, 13); }
   .key.yellow {
-    --color: hsl(50, 80%, 60%); }
+    --color: rgb(238, 201, 17); }
   .key.green {
-    --color: hsl(150, 80%, 60%); }
+    --color: rgb(17, 136, 77); }
   .key.blue {
-    --color: hsl(210, 80%, 60%); }
+    --color: rgb(14, 127, 240); }
   .key.purple {
-    --color: hsl(270, 80%, 60%); }
+    --color: rgb(114, 11, 218); }
   .key[data-color="grey"] {
-    --color: hsl(0, 0%, 50%); }
+    --color: rgb(87, 86, 86); }
   .key[data-color="red"] {
-    --color: hsl(0, 80%, 60%); }
+    --color: rgb(241, 34, 34); }
   .key[data-color="orange"] {
-    --color: hsl(25, 80%, 60%); }
+    --color: rgb(204, 95, 17); }
   .key[data-color="yellow"] {
-    --color: hsl(50, 80%, 60%); }
+    --color: rgb(255, 223, 60); }
   .key[data-color="green"] {
-    --color: hsl(150, 80%, 60%); }
+    --color: rgb(51, 236, 143); }
   .key[data-color="blue"] {
-    --color: hsl(210, 80%, 60%); }
+    --color: rgb(105, 175, 245); }
   .key[data-color="purple"] {
-    --color: hsl(270, 80%, 60%); }
+    --color: rgb(164, 92, 236); }
 
 a {
   text-decoration: none;
@@ -138,7 +138,6 @@ a {
       transition: inherit; }
     #footer #dribbble:before {
       display: inline;
-      content: 'View original Dribbble';
       font-size: 2vh;
       opacity: 0;
       transform: translate3D(-200px, 0, 0); }
@@ -152,7 +151,7 @@ a {
       background-size: contain;
       background-position: center; }
     #footer #dribbble.hover, #footer #dribbble:hover {
-      background: #e94e89; }
+      background: #f15994; }
       #footer #dribbble.hover:before, #footer #dribbble:hover:before {
         opacity: 1;
         transform: translate3D(0, 0, 0);

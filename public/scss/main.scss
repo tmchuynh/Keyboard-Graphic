@@ -10,7 +10,7 @@
 body {
     margin: 0;
     overflow: hidden;
-    background-color: hsl(0, 0%, 4%);
+    background-color: hsl(0, 7%, 65%);
     height: 100vh;
     display: flex;
     align-items: center;
@@ -53,14 +53,13 @@ body {
 
 .key {
     --width: var(--key-width);
-    --color: hsl(0, 0%, 85%);
+    --color: rgb(217, 217, 217);
     --size: 1;
     --size-2: 1.654545; // calc((50 + 15 + 25 - 7.5) / 50); // 1.65
     --size-3: 1.981818; // calc((50 + 15 + 25 - 7.5 + 15) / 50); // 1.95
     --size-4: 2.290909; // calc((50 + 15 + 25 * 2) / 50); // 2.3
     --size-5: 2.618181; // calc((50 + 15 * 2 + 25 * 2) / 50); // 2.6 | Left shift
     --size-6: 1.327272;
-    // --size-7: 7.781818;
     --size-7: 7.8;
     display: flex;
     align-items: center;
@@ -101,12 +100,10 @@ body {
         width: 15px;
         height: 15px;
         border-radius: 7.5px;
-        // margin: 17.5px 0 0 17.5px;
         background-color: var(--color);
     }
 
     &.stretch {
-        // justify-content: stretch;
         padding: 0 25px;
 
         &:before {
@@ -143,63 +140,61 @@ body {
     }
 
     &.grey {
-        --color: hsl(0, 0%, 50%);
+        --color: rgb(170, 170, 170);
     }
 
     &.red {
-        --color: hsl(0, 80%, 60%);
+        --color: rgb(224, 11, 11);
     }
 
     &.orange {
-        --color: hsl(25, 80%, 60%);
+        --color: rgb(228, 103, 13);
     }
 
     &.yellow {
-        --color: hsl(50, 80%, 60%);
+        --color: rgb(238, 201, 17);
     }
 
     &.green {
-        --color: hsl(150, 80%, 60%);
+        --color: rgb(17, 136, 77);
     }
 
     &.blue {
-        --color: hsl(210, 80%, 60%);
+        --color: rgb(14, 127, 240);
     }
 
     &.purple {
-        --color: hsl(270, 80%, 60%);
+        --color: rgb(114, 11, 218);
     }
 
     &[data-color="grey"] {
-        --color: hsl(0, 0%, 50%);
+        --color: rgb(87, 86, 86);
     }
 
     &[data-color="red"] {
-        --color: hsl(0, 80%, 60%);
+        --color: rgb(241, 34, 34);
     }
 
     &[data-color="orange"] {
-        --color: hsl(25, 80%, 60%);
+        --color: rgb(204, 95, 17);
     }
 
     &[data-color="yellow"] {
-        --color: hsl(50, 80%, 60%);
+        --color: rgb(255, 223, 60);
     }
 
     &[data-color="green"] {
-        --color: hsl(150, 80%, 60%);
+        --color: rgb(51, 236, 143);
     }
 
     &[data-color="blue"] {
-        --color: hsl(210, 80%, 60%);
+        --color: rgb(105, 175, 245);
     }
 
     &[data-color="purple"] {
-        --color: hsl(270, 80%, 60%);
+        --color: rgb(164, 92, 236);
     }
 }
-
-////////////////////////////////
 
 a {
     text-decoration: none;
@@ -226,7 +221,6 @@ a {
 
         &:before {
             display: inline;
-            content: 'View original Dribbble';
             font-size: 2vh;
             opacity: 0;
             transform: translate3D(-200px, 0, 0);
@@ -245,7 +239,7 @@ a {
 
         &.hover,
         &:hover {
-            background: hsl(337, 78%, 61%);
+            background: rgb(241, 89, 148);
 
             &:before {
                 opacity: 1;
