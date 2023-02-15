@@ -74,6 +74,8 @@ function setKeyState(code, state) {
 }
 /* It's preventing the function keys from being pressed. */
 window.addEventListener('keydown', e => {
+    console.log(e.key);
+    document.querySelector(".key_pressed").innerText = "Key Pressed: " + e.key;
     if (e.code.startsWith('F') && !isNaN(e.code.slice(1))) {
         return;
     }

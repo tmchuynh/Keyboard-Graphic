@@ -12,6 +12,13 @@ body {
   justify-content: center;
   user-select: none; }
 
+.key_pressed {
+  position: absolute;
+  top: -8rem;
+  left: 20rem;
+  font-size: 3rem;
+  color: black; }
+
 .keyboard {
   --rot-x: 20deg;
   --rot-y: 0deg;
